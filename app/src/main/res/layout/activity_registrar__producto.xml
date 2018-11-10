@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar_Producto">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="48dp"
+            android:text="Registrar un Producto" />
+
+        <EditText
+            android:id="@+id/txtNombreProducto"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtIdProducto"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="185dp"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPrecioProducto"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtNombreProducto"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="255dp"
+            android:ems="10"
+            android:hint="Precio"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtIdProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:hint="Id"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnRegistarP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="79dp"
+            android:layout_marginBottom="126dp"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnCancelarP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="126dp"
+            android:text="Cancelar" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
